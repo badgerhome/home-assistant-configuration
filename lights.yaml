@@ -1,0 +1,16 @@
+  - platform: hue
+    host: 192.168.1.248
+    
+  - platform: rfxtrx
+    automatic_add: True
+    devices:
+      _REDACTED_:
+        name: Bedroom Main Light
+      _REDACTED_:
+        name: Dining Room Light
+      _REDACTED_:
+        name: Living Room Lights
+      _REDACTED_:
+        name: Office Light
+      _REDACTED_:
+        name: Main Bathroom Light

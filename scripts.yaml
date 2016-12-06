@@ -1,0 +1,15 @@
+doorbell_tv: !include includes/scripts/doorbell_tv.yaml
+timer_off: !include includes/scripts/timer_off.yaml
+patio_door_lights: !include includes/scripts/patio_door_lights.yaml
+patio_door_timer_off: !include includes/scripts/patio_door_timer_off.yaml
+bedtime: !include includes/scripts/bedtime.yaml
+bedtime_timer_off: !include includes/scripts/bedtime_timer_off.yaml
+flash_lights: !include includes/scripts/flash_lights.yaml
+tv_bbc_one: !include includes/scripts/tv_bbc_one.yaml
+tv_bbc_two: !include includes/scripts/tv_bbc_two.yaml
+tv_cbeebies: !include includes/scripts/tv_cbeebies.yaml
+tv_itv: !include includes/scripts/tv_itv.yaml
+tv_channel_four: !include includes/scripts/tv_channel_four.yaml
+tv_channel_five: !include includes/scripts/tv_channel_five.yaml
+audio_welcome_home_michael: !include includes/scripts/audio_welcome_home_michael.yaml
+audio_test: !include includes/scripts/audio_test.yaml

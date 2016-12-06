@@ -1,0 +1,33 @@
+#people status
+  mike_home:
+    name: Mike Home
+    initial: off
+    
+  alex_home:
+    name: Alex Home
+    initial: off
+    
+  visitors_home:
+    name: Visitors Home
+    initial: off
+    
+  sleeping:
+    name: Sleeping
+    initial: off
+
+#motion status
+  office_motion:
+    name: Office Motion
+    initial: off
+    
+  nursery_motion:
+    name: Nursery Motion
+    initial: off
+    
+  bedroom_motion:
+    name: Bedroom Motion
+    initial: off
+    
+  main_bathroom_motion:
+    name: Main Bathroom Motion
+    initial: off

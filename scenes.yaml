@@ -1,0 +1,52 @@
+  - name: Bedtime Mode
+    entities:
+      group.living_room_tv: off
+      switch.temp_switch_1: on
+      light.mike:
+        state: on
+        brightness: 30
+      light.alex:
+        state: on
+        brightness: 30
+      light.bedroom_main_light: off
+      group.garden_lights: off
+      light.living_room_lights: off
+      light.dining_room_light: off
+      switch.christmas_tree_lights: off
+      light.living_room:
+        state: on
+        brightness: 30
+      script.bedtime: on
+
+  - name: flash on
+    entities:
+      script.flash_lights: on
+      
+  - name: flash off
+    entities:
+      script.flash_lights: off
+
+  - name: Away Mode
+    entities:
+      group.living_room: off
+      group.bedroom_lights: off
+      group.garden_lights: off
+      group.living_room_lights: off
+      group.office: off
+      group.main_bathroom: off
+      
+  - name: TV Volume Up
+    entities:
+      switch.volume_up_tv_1: on
+
+  - name: TV Volume Down
+    entities:
+      switch.volume_down_tv_1: on
+      
+  - name: Pause TV
+    entities:
+      switch.pause_tv: on
+      
+  - name: Play TV
+    entities:
+      switch.play_tv: on

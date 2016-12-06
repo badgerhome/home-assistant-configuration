@@ -1,0 +1,11 @@
+  tv_channels:
+    name: Channel Select
+    options:
+      - None
+      - BBC ONE HD
+      - BBC TWO HD
+      - ITV HD
+      - FOUR HD
+      - FIVE HD
+      - CBEEBIES
+    initial: None
