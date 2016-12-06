@@ -1,0 +1,115 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+zone:
+  name: Emerald House
+  latitude: !secret latitude_emerald
+  longitude: !secret longitude_emerald
+  icon: mdi:briefcase
+
+zone 2:
+  name: Paddington
+  latitude: !secret latitude_paddington
+  longitude: !secret longitude_paddington
+  icon: mdi:briefcase
+  
+http:
+  api_password: !secret api_password
+
+updater:
+discovery:
+conversation:
+history:
+logbook:
+sun:
+  
+panel_iframe: !include paneliframes.yaml
+scene: !include scenes.yaml
+group: !include groups.yaml
+automation: !include_dir_merge_list includes/automation
+switch: !include_dir_merge_list includes/switches
+light: !include lights.yaml
+script: !include scripts.yaml
+sensor: !include sensors.yaml
+camera: !include cameras.yaml
+input_select: !include input_select.yaml
+input_boolean: !include input_boolean.yaml
+alexa: !include alexa.yaml
+
+emulated_hue:
+  host_ip: 192.168.1.100
+  listen_port: 8300
+  expose_by_default: false
+  exposed_domains:
+    - light
+    - switch
+    - script
+
+alarm_control_panel:
+  platform: manual
+  code: !secret alarm_code
+
+rfxtrx:
+  device: /dev/serial/by-id/usb-RFXCOM_RFXtrx433_06VVCQID-if00-port0
+  debug:
+
+device_tracker:
+  - platform: owntracks
+
+notify:
+  - name: notify
+    platform: pushover
+    api_key: !secret api_key_pushover_1
+    user_key: !secret user_key_pushover_1
+    
+  - name: telegram
+    platform: telegram
+    api_key: !secret api_key_telegram_1
+    chat_id: !secret chat_id_telegram_1
+    
+  - name: pushbullet
+    platform: pushbullet
+    api_key: !secret api_key_pushbullet_1
+
+wemo:
+  static:
+    - 192.168.1.198
+    - 192.168.1.140
+
+nest:
+  username: !secret username_nest
+  password: !secret password_nest
+
+climate:
+  platform: nest
+
+media_player:
+  - platform: lg_netcast
+    host: 192.168.1.204
+    access_token: 777855
+    
+  - platform: roku
+#  - platform: plex
+#  - platform: sonos
+  - platform: cast
+    
+mqtt:
+  broker: 127.0.0.1
+  port: 1883
+  client_id: !secret client_id_mqtt
+  username: !secret username_mqtt
+  password: !secret password_mqtt
+
+zwave:
+  usb_path: /dev/ttyACM0
+  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+
+# Currently experimental
+shell_command:
+  audio_test: bash /home/hass/.homeassistant/includes/speech.sh the current temerature is {{ states.climate.living_room.attributes.current_temperature }} degrees celcius and the patio door is {{ states.sensor.patio_door.state }} and the home is currently consuming {{ states.sensor.mains_electricity.state }} watts of electricity
