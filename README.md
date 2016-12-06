@@ -81,3 +81,18 @@ Below are some of the [Intents](https://developer.amazon.com/appsandservices/sol
 - "Alexa, tell home to resume playing the T.V." - Plays the Television on any input
 
 - "Alexa, tell home it's time for bed" - Turns all lights and switches off, leaves a lamp on dim for 5 mins, turns on bedside lamps dim, sets nest thermostat to 18degC
+
+## Amazon Alexa & Apple Siri (HomeKit) Emulated Hue
+- Control all lights individually or at once. On, Off & Brightness
+- Control Television. Turn on TV and numerious inputs. Turn on specific TV channels (.e.g. BBC ONE, Channel4, Cebeebies)
+- Control all switches individually or at once. On, Off
+- Control Scenes - e.g. Bedtime (switches off all lights and switches, turns on lamp for 5mins and sets nest to 18degC)
+
+## Notable Automations
+- Switch on garden decking lights and outside wall lamp at night time when the patio door is opened.
+- Switch on outside Christmas lights at sunset and switch off at a set time.
+- When doorbell is pushed > Send a notification to mobile with a snapshot of the CCTV cameras and a link to the BlueIris app (allowing 2-way audio communication with person at the door remoteley)
+- When doorbell is pushed > Show a Picture-In-Picture on the TV of the CCTV Camera.
+- When motion is detected in (room) > Turn on (lights) in (room)
+- When no motion has been detected for a period of time in (room) > turn off (lights) in (room)
+- When front door is opened > Send notification to mobile with snapshots of the CCTV cameras.
