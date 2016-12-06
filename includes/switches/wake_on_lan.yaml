@@ -1,0 +1,39 @@
+  - platform: wake_on_lan
+    name: "Windows 10 Tower"
+    mac_address: “_REDACTED_”
+    host: "192.168.1.9"
+
+  - platform: wake_on_lan
+    name: "Windows 10 Virtual Machine"
+    mac_address: "_REDACTED_"
+    host: "192.168.1.11"
+
+  - platform: wake_on_lan
+    name: "Windows 8 Virtual Machine"
+    mac_address: "_REDACTED_"
+    host: "192.168.1.6"
+
+  - platform: wake_on_lan
+    name: "Ubuntu Virtual Machine"
+    mac_address: "_REDACTED_"
+    host: "192.168.1.9"
+
+  - platform: wake_on_lan
+    name: "Debian Virtual Machine"
+    mac_address: "_REDACTED_"
+    host: "192.168.1.4"
+
+  - platform: wake_on_lan
+    name: "Debian VPN Virtual Machine"
+    mac_address: "_REDACTED_"
+    host: "192.168.1.7"
+    
+  - platform: wake_on_lan
+    name: "CCTV 1"
+    mac_address: "00:00:00:00:00:00"
+    host: "192.168.1.15"
+    
+  - platform: wake_on_lan
+    name: "CCTV 2"
+    mac_address: "00:00:00:00:00:00"
+    host: "192.168.1.15"

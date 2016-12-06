@@ -1,0 +1,151 @@
+  - platform: command_line
+    switches:
+      mute_tv_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 mute"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 mute"
+      volume_up_tv_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 volumeup"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 volumeup"
+      volume_down_tv_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 volumedown"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 29824507 volumedown"
+      pause_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 pause"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 play"
+      pause_shield_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324550 pause"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324550 play"
+      pause_xbox360_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37328683 pause"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37328683 play"
+      pause_xboxone_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 17988319 pause"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 17988319 play"
+      pause_appletv_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 17690753 pause"
+          command_off: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 17690753 play"
+      0_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 0"
+          command_off: ""
+      1_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 1"
+          command_off: ""
+      2_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 2"
+          command_off: ""
+      3_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 3"
+          command_off: ""
+      4_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 4"
+          command_off: ""
+      5_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 5"
+          command_off: ""
+      6_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 6"
+          command_off: ""
+      7_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 7"
+          command_off: ""
+      8_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 8"
+          command_off: ""
+      9_humax_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 9"
+          command_off: ""
+      humax_back_1:
+          command_on: "/home/hass/.homeassistant/plugins/HarmonyHubControl/HarmonyHubControl _REDACTED_ _REDACTED_192.168.1.187 issue_device_command 37324755 back"
+          command_off: ""
+          
+       _REDACTED_:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+          command_state: ssh  _REDACTED_  systemctl is-active  _REDACTED_
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name:  _REDACTED_
+          
+       _REDACTED_:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+          command_state: ssh  _REDACTED_  systemctl is-active  _REDACTED_
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name:  _REDACTED_
+          
+       _REDACTED_:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+          command_state: ssh  _REDACTED_  systemctl is-active  _REDACTED_
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name:  _REDACTED_
+          
+#       _REDACTED_:
+#          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+#          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+#          command_state: "ssh  _REDACTED_  systemctl is-active  _REDACTED_
+#          value_template: >
+#            {{ value == 'active' }}
+#          friendly_name:  _REDACTED_
+
+       _REDACTED_:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+          command_state: ssh  _REDACTED_  systemctl is-active  _REDACTED_
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name: _REDACTED_
+          
+       _REDACTED_:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start  _REDACTED_
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop  _REDACTED_
+          command_state: ssh  _REDACTED_  systemctl is-active  _REDACTED_
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name: _REDACTED_
+          
+      apache_web_service_debian:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start apache2.service
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop apache2.service
+          command_state: ssh  _REDACTED_  systemctl is-active apache2
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name: Apache Web Service (Debian)
+          
+      plex_server:
+          command_on: ssh  _REDACTED_  sudo /bin/systemctl start plexmediaserver.service
+          command_off: ssh  _REDACTED_  sudo /bin/systemctl stop plexmediaserver.service
+          command_state: ssh  _REDACTED_  systemctl is-active plexmediaserver
+          value_template: >
+            {{ value == 'active' }}
+          friendly_name: Plex Server
+          
+#fake switches for use with automation and scripts
+      temp_switch_1:
+          command_off: ""
+      bedtime_switch_1:
+          command_off: ""
+      pause_tv:
+          command_off: ""
+      play_tv:
+          command_off: ""
+      bbc_one_1:
+          command_off: ""
+      bbc_two:
+          command_off: ""
+      cbeebies:
+          command_off: ""
+      itv:
+          command_off: ""
+      channel_four:
+          command_off: ""
+      channel_five:
+          command_off: ""
+
+      alarm_test_1:
+          command_on: "cvlc --play-and-exit /home/hass/.homeassistant/includes/alarm1.wav"
+          
+      alarm_test_2:
+          command_on: "bash /home/hass/.homeassistant/includes/speech.sh battery is {{ states.sensor.fibaro_system_fgms001_motion_sensor_burglar_5_10.attributes.battery_level }} percent"

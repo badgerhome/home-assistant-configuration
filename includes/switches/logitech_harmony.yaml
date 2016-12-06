@@ -1,0 +1,49 @@
+          
+  - platform: mqtt
+    name: "TV"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/tv/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/tv/command"
+    payload_on: "on"
+    payload_off: "off"
+    qos: 0
+  - platform: mqtt
+    name: "Plex"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/plex/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/plex/command"
+    payload_on: "on"
+    payload_off: "off"
+    qos: 0
+  - platform: mqtt
+    name: "Xbox ONE"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/xboxone/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/xboxone/command"
+    payload_on: "on"
+    payload_off: "off"
+  - platform: mqtt
+    name: "Apple TV"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/appletv/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/appletv/command"
+    qos: 0
+    payload_on: "on"
+    payload_off: "off"
+  - platform: mqtt
+    name: "Android TV"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/androidtv/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/androidtv/command"
+    qos: 0
+    payload_on: "on"
+    payload_off: "off"
+  - platform: mqtt
+    name: "PC"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/pc/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/pc/command"
+    qos: 0
+    payload_on: "on"
+    payload_off: "off"
+  - platform: mqtt
+    name: "Xbox 360"
+    state_topic:   "harmony-api/hubs/harmonyhub/activities/xbox360/state"
+    command_topic: "harmony-api/hubs/harmonyhub/activities/xbox360/command"
+    qos: 0
+    payload_on: "on"
+    payload_off: "off"
