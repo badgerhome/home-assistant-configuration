@@ -1,0 +1,391 @@
+  # custom media players
+    media_player.chromecastaudio:
+      friendly_name: Chromecast Audio
+    media_player.roku_42655p010709:
+      friendly_name: Bedroom Roku 2
+    media_player.shield:
+      friendly_name: Nvidia Shield
+
+  # custom tracked devices
+    device_tracker.michaelsapplewatch:
+      hidden: true
+    device_tracker.michaelsmacbookpro:
+      hidden: true
+    device_tracker.michaelsipad:
+      hidden: true
+
+  # custom logitech harmony hub switch activities
+    switch.Xbox_ONE:
+      icon: mdi:xbox
+      emulated_hue: true
+    switch.Xbox_360:
+      icon: mdi:xbox
+      emulated_hue: true
+    switch.Apple_TV:
+      icon: mdi:apple
+      emulated_hue: true
+    switch.Android_TV:
+      icon: mdi:android
+      emulated_hue: true
+    switch.Plex:
+      icon: mdi:plex
+      emulated_hue: true
+    switch.TV:
+      icon: mdi:television
+      emulated_hue: true
+      emulated_hue_name: "Telley"
+    switch.PC:
+      icon: mdi:windows
+#coming soon - a script for PC that sends a WOL packet to Wake the Machine and a shutdown command to switch it off.      
+      
+  # custom logitech harmony hub switch commands - mainly used with automations and Alexa as Emulated Hue
+    switch.mute_tv_1:
+      icon: mdi:volume-off
+      friendly_name: Mute TV
+      emulated_hue: true
+    switch.volume_up_tv_1:
+      icon: mdi:volume-high
+      friendly_name: TV Volume Up
+      hidden: yes
+      emulated_hue: true
+      emulated_hue_name: "TV Volume Up"
+    switch.volume_down_tv_1:
+      icon: mdi:volume-medium
+      friendly_name: TV Volume Down
+      hidden: yes
+      emulated_hue: true
+      emulated_hue_name: "TV Volume Down"
+      
+    switch.pause_appletv_1:
+      hidden: yes
+    switch.pause_humax_1:
+      hidden: yes
+    switch.pause_shield_1:
+      hidden: yes
+    switch.pause_xbox360_1:
+      hidden: yes
+    switch.pause_xboxone_1:
+      hidden: yes
+
+#To control channels using Logitech Harmony Hub via Alexa and Siri - Controls numbers 0-9 on a Humax Freesat Box
+    switch.0_humax_1:
+      hidden: yes
+    switch.1_humax_1:
+      hidden: yes
+    switch.2_humax_1:
+      hidden: yes
+    switch.3_humax_1:
+      hidden: yes
+    switch.4_humax_1:
+      hidden: yes
+    switch.5_humax_1:
+      hidden: yes
+    switch.6_humax_1:
+      hidden: yes
+    switch.7_humax_1:
+      hidden: yes
+    switch.8_humax_1:
+      hidden: yes
+    switch.9_humax_1:
+      hidden: yes
+    switch.humax_back_1:
+      hidden: yes
+      
+    switch.bbc_one_1:
+      homebridge_name: BBC ONE
+      
+    script.tv_bbc_one:
+      emulated_hue: true
+      emulated_hue_name: "B B C ONE"
+      
+    switch.bbc_two:
+      homebridge_name: BBC TWO
+      
+    script.tv_bbc_two:
+      emulated_hue: true
+      emulated_hue_name: "B B C TWO"
+      
+    switch.itv:
+      homebridge_name: ITV
+      
+    script.tv_itv:
+      emulated_hue: true
+      emulated_hue_name: "I T V"
+      
+    switch.cbeebies:
+      homebridge_name: Cbeebies
+      
+    script.tv_cbeebies:
+      emulated_hue: true
+      emulated_hue_name: "Cbeebies"
+      
+    switch.channel_four:
+      homebridge_name: Channel Four
+      
+    script.tv_channel_four:
+      emulated_hue: true
+      emulated_hue_name: "FOUR H D"
+      
+    switch.channel_five:
+      homebridge_name: Channel Five
+      
+    script.tv_channel_five:
+      emulated_hue: true
+      emulated_hue_name: "FIVE H D"
+      
+  # custom lights
+  # garden
+    switch.Decking_Lights:
+      icon: mdi:lightbulb
+      emulated_hue: true
+    switch.Twinkle_Lights:
+      icon: mdi:lightbulb
+      friendly_name: Fence Lights
+      emulated_hue: true
+    light.Outside_Light:
+      friendly_name: Wall Lamp
+      emulated_hue: true
+    switch.icicles:
+      icon: mdi:ornament
+
+      
+  # living room    
+    light.Living_Room:
+      friendly_name: Big Lamp
+      icon: mdi:lamp
+      emulated_hue: true
+    light.Living_Room_Lights:
+      emulated_hue: true
+    light.Dining_Room_Light:
+      emulated_hue: true
+    switch.Christmas_Tree_Lights:
+      icon: mdi:pine-tree
+      emulated_hue: true
+  
+  # bedroom
+    light.Mike:
+      icon: mdi:lamp
+      emulated_hue: true
+    light.Alex:
+      icon: mdi:lamp
+      emulated_hue: true
+
+  # custom internet speedtest
+    sensor.speedtest_download:
+      icon: mdi:cloud-download
+      friendly_name: Download
+    sensor.speedtest_upload:
+      icon: mdi:cloud-upload
+      friendly_name: Upload
+    sensor.speedtest_ping:
+      icon: mdi:vector-line
+      friendly_name: Ping
+
+  # custom wunderground weather - data is served from my own weather station via Wunderground using PYWWS on a Raspberry Pi
+    sensor.pws_temp_c:
+      friendly_name: Temperature
+    sensor.pws_wind_mph:
+      icon: mdi:weather-windy
+      friendly_name: Wind
+    sensor.pws_wind_dir:
+      icon: mdi:arrow-all
+      friendly_name: Wind Direction
+
+  # custom machine and virtual machine wake on lan
+    switch.Windows_10_Tower:
+      icon: mdi:windows
+      homebridge_hidden: true
+    switch.Windows_10_Virtual_Machine:
+      icon: mdi:windows
+      homebridge_hidden: true
+    switch.Debian_Virtual_Machine:
+      icon: mdi:linux
+      homebridge_hidden: true
+    switch.Debian_VPN_Virtual_Machine:
+      icon: mdi:linux 
+      homebridge_hidden: true
+    switch.Ubuntu_Virtual_Machine:
+      icon: mdi:linux
+      homebridge_hidden: true
+    switch.Windows_8_Virtual_Machine:
+      icon: mdi:windows
+      homebridge_hidden: true
+# used for status only to tell if the CCTV cameras have a network connection
+    switch.CCTV_1:
+      icon: mdi:webcam
+      homebridge_hidden: true
+    switch.CCTV_2:
+      icon: mdi:webcam
+      homebridge_hidden: true
+
+  # custom climate
+    climate.living_room:
+      friendly_name: Nest
+
+  # custom scenes
+    scene.away_mode:
+      icon: mdi:run
+    scene.bedtime_mode:
+      icon: mdi:hotel
+    scene.tv_volume_up:
+      icon: mdi:volume-high
+    scene.tv_volume_down:
+      icon: mdi:volume-medium
+    scene.pause_tv:
+      icon: mdi:pause
+    scene.play_tv:
+      icon: mdi:play
+      
+  # custom doors
+    switch.doorbell:
+      icon: mdi:bell-ring
+      homebridge_hidden: true
+    switch.patio_door:
+      icon: mdi:glassdoor
+      homebridge_hidden: true
+    switch.front_door:
+      icon: mdi:glassdoor
+      homebridge_hidden: true
+    switch.letterbox:
+      icon: mdi:email-outline
+      homebridge_hidden: true
+      
+  # custom windows
+    switch.nursery_window:
+      icon: mdi:blinds
+      homebridge_hidden: true
+    switch.office_window:
+      icon: mdi:blinds
+      homebridge_hidden: true
+    switch.bedroom_window:
+      icon: mdi:blinds
+      homebridge_hidden: true
+      
+  # custom automations
+    switch.temp_switch_1:
+      hidden: true
+      
+    switch.bedtime_switch_1:
+      emulated_hue: true
+      emulated_hue_name: "Bedtime"
+      homebridge_hidden: true
+      
+    switch.pause_tv:
+      emulated_hue: true
+      emulated_hue_name: "Pause Telley"
+      
+    switch.play_tv:
+      emulated_hue: true
+      emulated_hue_name: "Unpause Telley"
+
+  # input booleans
+  # people status
+    input_boolean.mike_home:
+      icon: mdi:human-male
+    input_boolean.alex_home:
+      icon: mdi:human-female
+    input_boolean.visitors_home:
+      icon: mdi:human-male-female
+    input_boolean.sleeping:
+      icon: mdi:sleep
+  # motion status
+    input_boolean.office_motion:
+      icon: mdi:run
+    input_boolean.nursery_motion:
+      icon: mdi:run
+    input_boolean.main_bathroom_motion:
+      icon: mdi:run
+    input_boolean.bedroom_motion:
+      icon: mdi:run
+      
+  # custom z-wave sensors
+  # fibaro sensor - 1
+    sensor.fibaro_system_fgms001_motion_sensor_temperature_5_1:
+      friendly_name: Temperature
+    sensor.fibaro_system_fgms001_motion_sensor_luminance_5_3:
+      friendly_name: LUX
+      icon: mdi:white-balance-sunny
+    sensor.fibaro_system_fgms001_motion_sensor_burglar_5_10:
+      friendly_name: Motion
+      icon: mdi:run
+      
+  # aeotec multisensor 6 - 1
+    binary_sensor.aeotec_zw100_multisensor_6_sensor_7_0:
+      polling_intensity: 1
+      
+    sensor.aeotec_zw100_multisensor_6_luminance_7_3:
+      friendly_name: LUX
+      icon: mdi:white-balance-sunny
+    sensor.aeotec_zw100_multisensor_6_relative_humidity_7_5:
+      friendly_name: Humidity
+      icon: mdi:water-percent
+    sensor.aeotec_zw100_multisensor_6_temperature_7_1:
+      friendly_name: Temperature
+      
+  # greenwave power node - office
+    sensor.greenwave_powernode_1_port_power_6_8:
+      friendly_name: Server Electricity
+      icon: mdi:power
+    sensor.greenwave_powernode_1_port_energy_6_0:
+      friendly_name: Server Total Usage
+      icon: mdi:power-settings
+    switch.greenwave_powernode_1_port_switch_6_0:
+      friendly_name: Server
+      icon: mdi:server
+      homebridge_hidden: true
+      
+  # greenwave power node - outside rudolph xmas lights
+    switch.greenwave_powernode_1_port_switch_8_0:
+      friendly_name: Rudolph
+      icon: mdi:ornament
+      
+  # energy sensors
+    sensor.mains_electricity:
+      icon: mdi:power
+
+  # template sensors
+  # nest
+    sensor.nest_mode:
+      icon: mdi:home
+  # motion
+    sensor.office_motion:
+      icon: mdi:run
+    sensor.nursery_motion:
+      icon: mdi:run
+    sensor.main_bathroom_motion:
+      icon: mdi:run
+    sensor.bedroom_motion:
+      icon: mdi:run
+  # letterbox
+    sensor.letterbox:
+      icon: mdi:email-outline
+  # doors
+    sensor.patio_door:
+      icon: mdi:glassdoor
+    sensor.front_door:
+      icon: mdi:glassdoor
+  # windows
+    sensor.nursery_window:
+      icon: mdi:blinds
+    sensor.bedroom_window:
+      icon: mdi:blinds
+    sensor.office_window:
+      icon: mdi:blinds
+      
+  # custom services
+    switch.apache_web_service_debian:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
+    switch.plex_server:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
+    switch._REDACTED_:
+      icon: mdi:floppy
