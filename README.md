@@ -52,11 +52,12 @@ My [Home Assistant](https://home-assistant.io/) Configuration Files
 - [Jim-Easterbrook's Pywws](https://github.com/jim-easterbrook/pywws)
 - [OwnTracks iOS App](http://owntracks.appstor.io/)
 
-## Devices Outside of Home Assistant
+## Devices & Software Outside of Home Assistant
 - [PLEX Media Server](https://plex.tv)
 - [Blue Iris CCTV Server](http://blueirissoftware.com/)
 - [Apache Web Server](https://httpd.apache.org/)
 - [Maplin Black USB Wireless Touchscreen Weather Station](http://www.maplin.co.uk/p/black-usb-wireless-touchscreen-weather-centre-n96gy)
+- [UnRAID Server (Running Debian & Windows 10 VM](https://lime-technology.com/)
 
 ## Alexa Skill API
 Below are some of the [Intents](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#The Intent Schema) & [Utterances](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#The Sample Utterances File) I have working with [Home Assistant](https://home-assistant.io/) via the Amazon [Alexa Skills Kit](https://developer.amazon.com/edw/home.html) API
@@ -83,6 +84,11 @@ Below are some of the [Intents](https://developer.amazon.com/appsandservices/sol
 
 - "Alexa, tell home it's time for bed" - Turns all lights and switches off, leaves a lamp on dim for 5 mins, turns on bedside lamps dim, sets nest thermostat to 18degC
 
+Coming Soon:
+
+- Ask Alexa for a summary of the day (e.g. commute time for specific user to certain location, current weather, day's predicted weather, if any windows or doors are left open) and then asks: "would you like me to arm the alarm?"
+- Tell Alexa you're going on vacation > turn everything off and turn heating down.
+
 ## Amazon Alexa & Apple Siri (HomeKit) Emulated Hue
 - Control all lights individually or at once. On, Off & Brightness
 - Control Television. Turn on TV and numerious inputs. Turn on specific TV channels (.e.g. BBC ONE, Channel4, Cebeebies)
@@ -108,3 +114,6 @@ Coming soon:
 - When motion is detected and no one is home > trigger the alarm (flash all lights in home, sound an alarm, send notification to mobile with CCTV snapshots)
 - When door is left open too long > warn with an audio alert/notification
 - When energy consumption goes above a set limit > warn with audio alert/notification
+- Whens users are sleeping > stop certain automations (e.g. motion lights on) / "downgraded" alarm arm
+- When a letter is posted through the letterbox > send a notification to mobile/desktop pc with snapshot of CCTV cameras
+- When close to home after being away for more than 24hours > Turn heating on
