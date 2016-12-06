@@ -1,0 +1,25 @@
+  - platform: rfxtrx
+    automatic_add: True
+    devices:
+      _REDACTED_:
+        name: Doorbell
+      _REDACTED_:
+        name: Front Door
+      _REDACTED_:
+        name: Patio Door
+      _REDACTED_:
+        name: Christmas Tree Lights
+      _REDACTED_:
+        name: Letterbox
+      _REDACTED_:
+        name: Nursery Window
+      _REDACTED_:
+        name: Office Window
+      _REDACTED_:
+        name: Bedroom Window
+      _REDACTED_:
+        name: Icicles
+      _REDACTED_:
+        name: Main Bathroom Motion
+      _REDACTED_:
+        name: Office Motion
