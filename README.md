@@ -118,3 +118,4 @@ Coming soon:
 - When a letter is posted through the letterbox > send a notification to mobile/desktop pc with snapshot of CCTV cameras
 - When close to home after being away for more than 24hours > Turn heating on
 - When battery levels on sensors are low > send notification
+- When first morning motion is detected > turn on lights, tv, heating. 
