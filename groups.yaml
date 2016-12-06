@@ -1,0 +1,276 @@
+default_view:
+  view: yes
+  entities:
+    - group.living_room_tv
+    - group.living_room
+    - group.living_room_lights
+    - scene.bedtime_mode
+    - scene.away_mode
+    - scene.flash_on
+    - scene.flash_off
+    - group.office
+    - group.garden_lights
+    - group.bedroom
+    - group.bedroom_lights
+    - group.outside
+    - group.outside_xmas_lights
+    - group.main_bathroom
+    - group.hallway
+    - group.nursery
+    - group.other
+    - group.energy
+    - group.batteries
+    - group.machines
+    - group.doors
+    - group.windows
+    - group.motion
+    - group.people_status
+    - group.services
+    - sensor.plex_spy
+    - sun.sun
+    - device_tracker.pi_mikesiphone
+    - alarm_control_panel.ha_alarm
+
+Living Room TV: 
+  name: Living Room TV 
+  entities: 
+    - switch.TV 
+    - switch.Plex 
+    - switch.Android_TV 
+    - switch.Apple_TV 
+    - switch.Xbox_ONE 
+    - switch.Xbox_360 
+    - switch.PC
+    - input_select.tv_channels
+    - switch.mute_tv_1
+    - scene.tv_volume_up
+    - scene.tv_volume_down
+    - scene.pause_tv
+    - scene.play_tv
+
+Living Room Lights:
+  name: Living Room Lights
+  entities:
+    - light.Living_Room
+    - light.Living_Room_Lights
+    - light.Dining_Room_light
+    - switch.Christmas_Tree_lights
+    
+Living Room:
+  name: Living Room
+  entities:
+    - sensor.patio_door
+    - climate.living_room
+    - sensor.nest_mode
+    
+Office:
+  name: Office
+  entities:
+    - light.Office_Light
+    - sensor.office_motion
+    - sensor.office_window
+ 
+Garden Lights:
+  name: Garden Lights
+  entities:
+    - switch.Decking_Lights
+    - switch.Twinkle_Lights
+    - light.Outside_Light
+ 
+Bedroom Lights:
+  name: Bedroom Lights
+  entities:
+    - light.Mike
+    - light.Alex
+    - light.bedroom_main_light
+    
+Bedroom:
+  name: Bedroom
+  entities:
+    - sensor.bedroom_window
+    - sensor.bedroom_motion
+    - sensor.fibaro_system_fgms001_motion_sensor_temperature_5_1
+    - sensor.fibaro_system_fgms001_motion_sensor_luminance_5_3
+    
+Main Bathroom:
+  name: Main Bathroom
+  entities:
+    - sensor.main_bathroom_motion
+    - light.main_bathroom_light
+ 
+Outside:
+  name: Weather
+  entities:
+    - sensor.PWS_temp_c
+    - sensor.PWS_wind_mph
+    - sensor.PWS_wind_dir
+ 
+Other:
+  name: Internet Status
+  entities:
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+    
+Energy:
+  name: Energy
+  entities:
+    - sensor.mains_electricity
+    - sensor.greenwave_powernode_1_port_power_6_8
+    - sensor.greenwave_powernode_1_port_energy_6_0
+    
+Batteries:
+  name: Batteries
+  entities:
+    - sensor.fibaro_battery
+    - sensor.owl_battery
+
+Hallway:
+  name: Hallway
+  entities:
+    - sensor.front_door
+    - sensor.letterbox
+    
+Nursery:
+  name: Nursery
+  entities:
+    - sensor.nursery_window
+    - sensor.nursery_motion
+    - sensor.aeotec_zw100_multisensor_6_luminance_7_3
+    - sensor.aeotec_zw100_multisensor_6_relative_humidity_7_5
+    - sensor.aeotec_zw100_multisensor_6_temperature_7_1
+
+Machines:
+  name: Machine Status / Wake
+  entities:
+    - switch.Windows_10_Tower
+    - switch.Windows_10_Virtual_Machine
+    - switch.Debian_Virtual_Machine
+    - switch.Debian_VPN_Virtual_Machine
+    - switch.Ubuntu_Virtual_Machine
+    - switch.Windows_8_Virtual_Machine
+    - switch.CCTV_1
+    - switch.CCTV_2
+    
+Doors:
+  name: Doors
+  entities:
+    - switch.patio_door
+    - switch.front_door
+    - switch.doorbell
+    - switch.letterbox
+    
+Windows:
+  name: Windows
+  entities:
+    - switch.nursery_window
+    - switch.office_window
+    - switch.bedroom_window
+    
+Motion:
+  name: Motion
+  entities:
+    - input_boolean.office_motion
+    - input_boolean.nursery_motion
+    - input_boolean.bedroom_motion
+    - input_boolean.main_bathroom_motion
+
+People Status:
+  name: People Status
+  entities:
+    - input_boolean.alex_home
+    - input_boolean.mike_home
+    - input_boolean.sleeping
+    - input_boolean.visitors_home
+    
+Services:
+  name: Services
+  entities:
+    - switch.apache_web_service_debian
+    - switch._REDACTED_
+    - switch._REDACTED_
+    - switch._REDACTED_
+    - switch._REDACTED_
+    - switch.plex_server
+    - switch._REDACTED_
+    - switch._REDACTED_
+    
+Outside Xmas Lights:
+  name: Outside Xmas Lights
+  entities:
+    - switch.greenwave_powernode_1_port_switch_8_0
+    - switch.icicles
+ 
+Rooms:
+  view: yes
+  name: Status
+  entities:
+    - group.Machines
+    - group.Other
+    - camera.mikes_location
+    - group.Doors
+    - group.Windows
+    - group.Motion
+    - group.Batteries
+    - group.Energy
+    - group.People_Status
+    - group.services
+ 
+Rooms 2:
+  view: yes
+  name: Living Room
+  entities:
+    - group.Living_Room_TV
+    - group.Living_Room_Lights
+    - group.Living_Room
+    - media_player.chromecastaudio
+    - media_player.shield
+    - media_player.lg_tv_remote
+ 
+Rooms 3:
+  view: yes
+  name: Back Garden
+  entities:
+    - group.Garden_Lights
+    - group.Outside
+ 
+Rooms 4:
+  view: yes
+  name: Front Garden
+  entities:
+    - camera.Cam_1
+    - camera.Cam_2
+    - group.Outside
+    - group.Outside_Xmas_Lights
+ 
+Rooms 5:
+  view: yes
+  name: Bedroom
+  entities:
+    - group.Bedroom_Lights
+    - group.Bedroom
+    - media_player.roku_REDACTED_
+    
+Rooms 6:
+  view: yes
+  name: Nursery
+  entities:
+    - group.Nursery
+    
+Rooms 7:
+  view: yes
+  name: Office
+  entities:
+    - group.Office
+    
+Rooms 8:
+  view: yes
+  name: Main Bathroom
+  entities:
+    - group.Main_Bathroom
+    
+Rooms 9:
+  view: yes
+  name: Hallway
+  entities:
+    - group.Hallway
