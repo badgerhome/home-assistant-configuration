@@ -1,0 +1,102 @@
+  intents:
+    WhereAreWeIntent:
+      speech:
+        type: plaintext
+        text: >
+          {%- if is_state('device_tracker.pi_mikesiphone', 'home') -%}
+            You are home, you silly
+          {%- else -%}
+            Mike is at {{ states("device_tracker.pi_mikesiphone") }}
+          {% endif %}
+
+    LocateIntent:
+      action:
+        service: notify.telegram
+        data_template:
+          message: The location of {{ User }} has been queried via Alexa.
+      speech:
+        type: plaintext
+        text: >
+          {%- for state in states.device_tracker -%}
+            {%- if state.name.lower() == User.lower() -%}
+              {{ state.name }} is at {{ state.state }}
+            {%- endif -%}
+          {%- else -%}
+            I am sorry, I do not know where {{ User }} is.
+          {%- endfor -%}
+      card:
+        type: simple
+        title: Sample title
+        content: Some more content
+
+    ControlLightsIntent:
+      action:
+        service: light.turn_off
+        entity_id: group.all_lights
+      speech:
+        type: plaintext
+        text: >
+          There you go. Enjoy the darkness.
+          
+    ElectricityConsumption:
+      speech:
+        type: plaintext
+        text: >
+          Your house is currently using {{ states.sensor.mains_electricity.state }} watts of electricity
+          
+    ElectricityConsumptionServer:
+      speech:
+        type: plaintext
+        text: >
+          Your unraid server is currently using {{ states.sensor.greenwave_powernode_1_port_power_6_8.state }} watts of electricity
+          
+    OpenWindows:
+      speech:
+        type: plaintext
+        text: >
+          The bedroom window is {{ states.sensor.bedroom_window.state }}. _REDACTED_ Bedroom window is {{ states.sensor.nursery_window.state }}. The office window is {{ states.sensor.office_window.state }}. I love windows. Windows 10 is my favourite.
+          
+    OpenDoors:
+      speech:
+        type: plaintext
+        text: >
+          The patio door is {{ states.sensor.patio_door.state }}. The front door is {{ states.sensor.front_door.state }}.
+          
+    FleurTemperature:
+      speech:
+        type: plaintext
+        text: >
+          The temperature in little _REDACTED_ bears room is currently {{ states.Sensor.aeotec_zw100_multisensor_6_temperature_7_1.state }} degrees celsius.
+          
+    InternetSpeed:
+      speech:
+        type: plaintext
+        text: >
+          Your downspeed is {{ states.sensor.speedtest_download.state }} megabits per second. Your upload speed is {{ states.sensor.speedtest_upload.state }} megabits per second.
+          
+    PauseTV:
+      action:
+        service: switch.turn_on
+        entity_id: switch.pause_tv
+      speech:
+        type: plaintext
+        text: >
+          OK. TV paused.
+          
+    PlayTV:
+      action:
+        service: switch.turn_on
+        entity_id: switch.play_tv
+      speech:
+        type: plaintext
+        text: >
+          OK. Enjoy.
+          
+    BedTime:
+      action:
+        service: switch.turn_on
+        entity_id: switch.bedtime_switch_1
+      speech:
+        type: plaintext
+        text: >
+          OK. Good Night _REDACTED_. Sleep Tight.

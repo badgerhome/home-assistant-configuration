@@ -1,0 +1,21 @@
+# CCTV Cameras are being served by a BlueIris server running on Windows 10
+
+  - platform: mjpeg
+    mjpeg_url: http://192.168.1.11:81/mjpg/Cam1
+    name: Cam 1
+    username: !secret username_blue_iris
+    password: !secret password_blue_iris
+    authentication: basic
+
+  - platform: mjpeg
+    mjpeg_url: http://192.168.1.11:81/mjpg/Cam2
+    name: Cam 2
+    username: !secret username_blue_iris
+    password: !secret password_blue_iris
+    authentication: basic
+
+# Displays a Google Map of users current location as determined by OwnTracks
+  - platform: generic
+    name: Mikes Location
+    still_image_url: https://maps.googleapis.com/maps/api/staticmap?center={{ states.device_tracker.pi_mikesiphone.attributes.latitude }},{{ states.device_tracker.pi_mikesiphone.attributes.longitude }}&zoom=13&size=500x500&maptype=roadmap&markers=color:blue%7Clabel:A%7C{{ states.device_tracker.pi_mikesiphone.attributes.latitude }},{{ states.device_tracker.pi_mikesiphone.attributes.longitude }}
+    limit_refetch_to_url_change: true
