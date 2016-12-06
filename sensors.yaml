@@ -1,0 +1,89 @@
+- platform: speedtest
+  server_id: _REDACTED_
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+- platform: wunderground
+  api_key: !secret api_key_wunderground
+  pws_id: !secret pws_id_wunderground
+  monitored_conditions:
+    - temp_c
+    - wind_dir
+    - wind_mph
+
+- platform: plex
+  name: Plex Spy
+  host: 192.168.1.4
+  port: 32400
+  username: !secret username_plex
+  password: !secret password_plex
+  server: !secret server_plex
+  
+- platform: rfxtrx
+  automatic_add: True
+  devices:
+    _REDACTED_:
+      name: Mains Electricity
+      
+- platform: template
+  sensors:
+    fibaro_battery:
+      value_template: '{{ states.sensor.fibaro_system_fgms001_motion_sensor_burglar_5_10.attributes.battery_level }}'
+      friendly_name: 'Fibaro Office Battery'
+      unit_of_measurement: '%'
+      
+    nest_mode:
+      value_template: '{% if is_state("sensor.states.climate.living_room.attributes.away_mode", "on") %}Away{% else %}Home{% endif %}'
+      friendly_name: 'Nest Mode'
+      
+    bedroom_motion:
+      value_template: '{% if is_state("sensor.fibaro_system_fgms001_motion_sensor_burglar_5_10", "8") %}Yes{% else %}No{% endif %}'
+      friendly_name: 'Bedroom Motion'
+      
+    nursery_motion:
+      value_template: '{% if is_state("sensor.aeotec_zw100_multisensor_6_burglar_7_10", "8") %}Yes{% else %}No{% endif %}'
+      friendly_name: 'Nursey Motion'
+      
+    office_motion:
+      value_template: '{% if is_state("switch.office_motion", "on") %}Yes{% else %}No{% endif %}'
+      friendly_name: 'Office Motion'
+      
+    main_bathroom_motion:
+      value_template: '{% if is_state("switch.main_bathroom_motion", "on") %}Yes{% else %}No{% endif %}'
+      friendly_name: 'Main Bathroom Motion'
+      
+    front_door:
+      value_template: '{% if is_state("switch.front_door", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Front Door'
+      
+    patio_door:
+      value_template: '{% if is_state("switch.patio_door", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Patio Door'
+
+    letterbox:
+      value_template: '{% if is_state("switch.letterbox", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Letterbox'
+      
+    nursery_window:
+      value_template: '{% if is_state("switch.nursery_window", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Nursery Window'
+      
+    bedroom_window:
+      value_template: '{% if is_state("switch.bedroom_window", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Bedroom Window'
+      
+    office_window:
+      value_template: '{% if is_state("switch.office_window", "off") %}Closed{% else %}Open{% endif %}'
+      friendly_name: 'Office Window'
+
+#    owl_battery:
+#      value_template: >-
+#          {%- if states.sensor.mains_electricity.attributes.battery_numeric %}
+#              {{ states.sensor.mains_electricity.attributes.battery_numeric }}
+#          {% else %}
+#              Unknown
+#          {%- endif %}
+#      friendly_name: 'Owl Energy Battery'
+#      unit_of_measurement: '%'
