@@ -119,3 +119,4 @@ Coming soon:
 - When close to home after being away for more than 24hours > Turn heating on
 - When battery levels on sensors are low > send notification
 - When first morning motion is detected > turn on lights, tv, heating. 
+- When tumble dryer in shed is finished > send notification and audio alarm.
