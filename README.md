@@ -50,6 +50,7 @@ My [Home Assistant](https://home-assistant.io/) Configuration Files
 - [Home-Assistant's Homebridge-Homeassistant](https://github.com/home-assistant/homebridge-homeassistant)
 - [Webmin](http://www.webmin.com/)
 - [Jim-Easterbrook's Pywws](https://github.com/jim-easterbrook/pywws)
+- [OwnTracks iOS App](http://owntracks.appstor.io/)
 
 ## Devices Outside of Home Assistant
 - [PLEX Media Server](https://plex.tv)
@@ -87,12 +88,23 @@ Below are some of the [Intents](https://developer.amazon.com/appsandservices/sol
 - Control Television. Turn on TV and numerious inputs. Turn on specific TV channels (.e.g. BBC ONE, Channel4, Cebeebies)
 - Control all switches individually or at once. On, Off
 - Control Scenes - e.g. Bedtime (switches off all lights and switches, turns on lamp for 5mins and sets nest to 18degC)
+- Get temperature information from rooms and outside.
 
 ## Notable Automations
-- Switch on garden decking lights and outside wall lamp at night time when the patio door is opened.
-- Switch on outside Christmas lights at sunset and switch off at a set time.
-- When doorbell is pushed > Send a notification to mobile with a snapshot of the CCTV cameras and a link to the BlueIris app (allowing 2-way audio communication with person at the door remoteley)
+- When patio door is opened at night time > Switch on garden decking lights and outside wall lamp.
+- At Sunset > Switch on outside Christmas lights > Switch off at a set time.
+- When doorbell is pushed > Send a notification to mobile with a snapshot of the CCTV cameras and a link to the BlueIris app (allowing 2-way audio communication with person at the door remoteley) also notification to deskop pc when at work.
 - When doorbell is pushed > Show a Picture-In-Picture on the TV of the CCTV Camera.
 - When motion is detected in (room) > Turn on (lights) in (room)
 - When no motion has been detected for a period of time in (room) > turn off (lights) in (room)
-- When front door is opened > Send notification to mobile with snapshots of the CCTV cameras.
+- When front door is opened > Send notification to mobile with snapshots of the CCTV cameras and notification to deskop pc when at work.
+
+Coming soon:
+- When a service running on Debian Server goes down > Restart it and send a notification to mobile.
+- When a CCTV camera goes offline > Send a noticication
+- When temperature in Nursery drops below 18degC > Send a notification to mobile.
+- When (user) arrives home > Disarm the Alarm and Greet them with a personal welcome message via audio (e.g. "Welcome home Michael, the temperate inside is 20degrees, it's 8degrees outside and your using 435 watts)
+- When the house is empty > turn everything off and arm the alarm
+- When motion is detected and no one is home > trigger the alarm (flash all lights in home, sound an alarm, send notification to mobile with CCTV snapshots)
+- When door is left open too long > warn with an audio alert/notification
+- When energy consumption goes above a set limit > warn with audio alert/notification
