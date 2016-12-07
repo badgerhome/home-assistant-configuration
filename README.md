@@ -121,3 +121,4 @@ Coming soon:
 - When first morning motion is detected > turn on lights, tv, heating. 
 - When tumble dryer in shed is finished > send notification and audio alarm.
 - When on vacation > randomise lights on and off.
+- Monitor state of all network devices (Alexa, TV, etc)
