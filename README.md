@@ -62,21 +62,21 @@ My [Home Assistant](https://home-assistant.io/) Configuration Files
 ## Alexa Skill API
 Below are some of the [Intents](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#The Intent Schema) & [Utterances](https://developer.amazon.com/appsandservices/solutions/alexa/alexa-skills-kit/docs/defining-the-voice-interface#The Sample Utterances File) I have working with [Home Assistant](https://home-assistant.io/) via the Amazon [Alexa Skills Kit](https://developer.amazon.com/edw/home.html) API
 
-- "Alexa, ask home where is user?" - Returns the location of the user - e.g "Michael is at Home"
+- ["Alexa, ask home where is user?" - Returns the location of the user - e.g "Michael is at Home" - VIDEO DEMO](https://youtu.be/u4xV0ZQATpk)
 
-- "Alexa, ask home where are we?" - Returns the location of all users - e.g. "You are both at home, you silly"
+- ["Alexa, ask home where are we?" - Returns the location of all users - e.g. "You are both at home, you silly" - VIDEO DEMO](https://www.youtube.com/watch?v=KQjvtkno20w)
 
-- "Alexa, How much electricity are we using?" - Returns the current energy consumption of the home in Watts - e.g. "Your home is currently consuming 432 Watts of electricity"
+- ["Alexa, How much electricity are we using?" - Returns the current energy consumption of the home in Watts - e.g. "Your home is currently consuming 432 Watts of electricity" - VIDEO DEMO](https://www.youtube.com/watch?v=ElcyV6g2FOw)
 
-- "Alexa, ask home are in windows open?" - Returns the state of the windows (open/closed) in the house - e.g. "The bedroom window is closed, The Nursery window is open"
+- ["Alexa, ask home are in windows open?" - Returns the state of the windows (open/closed) in the house - e.g. "The bedroom window is closed, The Nursery window is open" - VIDEO DEMO](https://www.youtube.com/watch?v=q_QnF6TtK1Y)
 
-- "Alexa, ask home are any doors open?" - Returns the state of the doors (open/closed) in the house - e.g. "The front door is closed, the patio door is open"
+- ["Alexa, ask home are any doors open?" - Returns the state of the doors (open/closed) in the house - e.g. "The front door is closed, the patio door is open" - VIDEO DEMO](https://www.youtube.com/watch?v=JUyeM9OZwTA)
 
-- "Alexa, ask home how much power is the server using?" - Returns the current energy consumption of the server in Watts - e.g. "Your UnRaid server is currently using 54 watts of electricity"
+- ["Alexa, ask home how much power is the server using?" - Returns the current energy consumption of the server in Watts - e.g. "Your UnRaid server is currently using 54 watts of electricity" - VIDEO DEMO](https://www.youtube.com/watch?v=bAK2FwmP4ko)
 
 - "Alexa, ask home what is the nursery temperature" - Returns current temperature in nursery room - e.g. "The temperature in the little ones room is currently 20.2 degrees celcius"
 
-- "Alexa, ask home how fast is the internet?" - Returns current downspeed and upspeed - e.g. "Your downspeed is 201 megabits per second, Your uploads is 40.5 megabits per second"
+- ["Alexa, ask home how fast is the internet?" - Returns current downspeed and upspeed - e.g. "Your downspeed is 201 megabits per second, Your uploads is 40.5 megabits per second" - VIDEO DEMO](https://www.youtube.com/watch?v=NtwOrbB_kBc)
 
 - "Alexa, tell home to pause the T.V." - Pauses the Television on any input
 
