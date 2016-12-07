@@ -120,3 +120,4 @@ Coming soon:
 - When battery levels on sensors are low > send notification
 - When first morning motion is detected > turn on lights, tv, heating. 
 - When tumble dryer in shed is finished > send notification and audio alarm.
+- When on vacation > randomise lights on and off.
